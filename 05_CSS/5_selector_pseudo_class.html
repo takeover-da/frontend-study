@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* 1. (어떠한 행동을 했을때 동작하는) 가상 클래스 선택자 */
+    /* :hover (마우스 커서가 올라가 있는 동안 선택) */
+    /* a:hover {
+      color: aquamarine;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      transition: 1s; 
+    }
+
+    .box:hover {
+      width: 500px;
+      height: 500px;
+      background-color: olive;
+    } */
+
+    /* :active (마우스를 클릭하고 있는 동안 선택) */
+    /* 모바일에서 :hover 대신 사용 */
+    /* a:active {
+      color: lime;
+    }
+
+    .box:active {
+      width: 300px;
+      background-color: blue;
+    } */
+
+    /* :focus (요소가 포커스(활성화)되면 선택) */
+    /* HTML 대화형(상호작용) 요소에 사용 가능
+       예: input, a, button, label, select, textarea 등 */
+    /* 구글 검색 -> HTML 대화형 콘텐츠 mdn */
+    /* input:focus {
+      background-color: orange;
+    }
+    a:focus {
+      background-color: aqua;
+    } */
+
+    /* 2. (특정한 요소를 선택하는) 가상 클래스 선택자 */
+    
+    /* :forst-child (첫번째 자식요소) */
+    /* .fruits span:first-child {
+      color: red;
+    } */
+    
+    /* :last-child (마지막 자식요소) */
+    /* .fruits h3:last-child {
+      color: blue;
+    } */
+
+    /* :nth-child(n) (n번째 자식요소) */
+    /* .fruits *:nth-child(2) {
+      color: green;
+    }
+    
+    .fruits *:nth-child(2n) {
+      color: yellow;
+    }
+    
+    .fruits *:nth-child(2n+1) {
+      color: orange;
+    }
+    
+    .fruits *:nth-child(n+2) {
+      color: rgb(234, 0, 255);
+    } */
+    
+    /* 짝수를 표현할때 */
+    /* .fruits *:nth-child(even) {
+      color: yellow;
+    } */
+    
+    /* 홀수를 표현할때 */
+    /* .fruits *:nth-child(odd) {
+      color: red;
+    } */
+
+    /* Quiz: 자식들 중 앞에 3개만 선택 */
+    /* .fruits *:nth-child(-n+3) {
+      color: red;
+    } */
+
+    /* :not(s) (선택자 s를 제외) */
+    /* ,(쉼표)로 여러개를 제외시킬수도 있다 */
+    /* .fruits *:not(span, h3) {
+      color: red;
+    } */
+
+
+
+  </style>
+
+</head>
+<body>
+  <a href="https://www.naver.com">NAVER</a>
+
+  <div class="box"></div>
+<hr>
+
+<input type="text">
+<hr>
+
+<div class="fruits">
+  <span>딸기</span>
+  <span>수박</span>
+  <div>오렌지</div>
+  <p>망고</p>
+  <h3>사과</h3>
+</div>
+
+</body>
+</html>
