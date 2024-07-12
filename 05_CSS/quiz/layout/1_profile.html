@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    .profile > img {
+      width: 100px;
+      height: 100px;
+      /* 요소를 원으로 만들기 */
+      border-radius: 50%;
+      /* 이미지 가운데 정렬하기(2가지) */
+      /* 1) 부모에 text-align: center; */
+      /* .profile {
+      text-align: center;
+      } */
+      /* 2) 가로 길이를 갖는 블록요소에 margin: 0 auto; */
+      display: block;
+      margin: 0 auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .red {
+      color: red;
+      font-weight: 700;
+    }
+
+    .box {
+      width: 450px;
+      background-color: cornflowerblue;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 5px;
+      margin: 0 auto;
+      box-shadow: 5px 5px black;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- div.profile>img -->
+   <div class="profile">
+    <img src="https://shop-phinf.pstatic.net/20221014_98/1665728882656rTWxX_JPEG/%EB%8C%80%ED%91%9C1.jpg?type=w860" alt="profile">
+  </div>
+  
+  <!-- h3.title -->
+   <h3 class="title">INSU KIM</h3>
+
+  <!-- p.content -->
+<p class="content">
+  <span class="red">Full Stack</span> Developer</p>
+
+  <!-- div.box -->
+<div class="box">
+  안녕하세요. Insu Kim 입니다.<br>
+  현재 풀스텍 공부를 하고 있으며<br>
+  취미는 독서입니다.
+</div>
+
+</body>
+</html>
