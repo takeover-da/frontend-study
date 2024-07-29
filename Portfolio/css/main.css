@@ -1,0 +1,5 @@
+html {
+  /* 스크롤 이동을 부드럽게! */
+  scroll-behavior: smooth;
+}
+
