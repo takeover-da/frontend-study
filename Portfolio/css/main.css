@@ -1,5 +1,61 @@
-html {
-  /* 스크롤 이동을 부드럽게! */
-  scroll-behavior: smooth;
+img {
+  display: block;
 }
 
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #c8c8c8;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+}
+
+header > .inner {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 윈도우 아이콘 */
+header .logo img {
+  width: 73px;
+  /* float: left; */
+  /* position: absolute;
+  left: 0; */
+}
+
+header nav ul {
+  display: flex;
+}
+
+/* 폴더 아이콘 */
+header nav ul li img {
+  width: 63px;
+  height: 63px;
+  margin: 10px;
+  /* float: left; */
+  /* position: absolute;
+  left: 0; */
+}
+
+header nav ul li a:hover {
+  color: orange;
+}
+
+
+.visual {
+  margin-top: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% -60px);
+}
+
+.visual video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
