@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지</title>
+  <!-- 파비콘 적용 -->
+  <!-- 파비콘(favicon.ico)은 프로젝트 폴더의 최상위(Root) 경로에 포함시키면 자동 적용
+    최상위 경로에 없거나, ico가 아닌 별도 파일을 가진 경우에는 <link>로 적용
+  
+    (참고) 파비콘 만들기: https://iconifier.net
+  -->
+  <link rel="icon" href="./favicon.ico">
+
+  <!-- reset.css -->
+  <!-- 스타일 초기화: 브라우저 별로 다른 기본 스타일이 적용되는 것을 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+  <!-- 구글 머티리얼 아이콘 -->
+  <!-- 구글에서 제공하는 머티리얼 스타일 아이콘, 글자처럼 취급 가능한 장점 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- 구글 웹폰트 -->
+  <!-- 오픈 라이선스 폰트, 한글 지원하는지 확인 및 필요한 굵기를 연결 -->
+  <!-- 한글: Noto Sans Korean, 영문: Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+   <header>
+    <div class="inner">
+      <!-- 로고 -->
+      <a href="main.html" class="logo">
+        <img src="/Portfolio/img/window_button.png" alt="윈도우버튼">
+      </a>
+
+       <!-- 메뉴 -->
+       <nav class="font-en">
+        <ul>
+          <li><a href="#main"><img src="img/folder.png" alt="Main폴더"></a></li>
+          <li><a href="#about"><img src="img/folder.png" alt="About폴더"></a></li>
+          <li><a href="#mission"><img src="img/folder.png" alt="Mission폴더"></a></li>
+          <li><a href="#work"><img src="img/folder.png" alt="Work폴더"></a></li>
+          <li><a href="#skill"><img src="img/folder.png" alt="Skill폴더"></a></li>
+          <li><a href="#content"><img src="img/folder.png" alt="Content폴더"></a></li>
+        </ul>
+        <!-- <button id="open-main-btn">Main</button>
+        <button id="open-profile-btn">Profile</button>
+        <button id="open-mission-btn">Mission</button>
+        <button id="open-work-btn">Work</button>
+        <button id="open-skills-btn">Skills</button>
+        <button id="open-content-btn">Content</button> -->
+       </nav>
+    </div>
+   </header>
+
+  <!-- 배경 비디오 -->
+   <section class="visual">
+    <video autoplay muted loop>
+      <source src="video/sky.mp4" type="video/mp4">
+    </video>
+   </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="inner">
+      <h2 class="title font-en">ABOUT</h2>
+      <div class="about__wrapper">
+        <div class="about__img">
+          <img src="" alt="프로필">
+        </div>
+        <div class="about__text">
+          <strong class="slogan font-en">Simple is Best</strong>
+          <h3 class="font-en">Kim In Su</h3>
+          <div>
+            <h4 class="font-en">EDUCATION</h4>
+            <ul>
+              <li>10.03 ~ 12.02 OO학교 OO과 졸업</li>
+              <li>24.6 ~ 24.12 풀스택 개발자 과정 수료</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  <!-- Mission -->
+<section id="mission" class="mis font-en">
+  <div class="inner">
+    <h2 class="title">MISSION</h2>
+    <div class="port">
+      <div class="port__img">
+        <img src="" alt="">
+      </div>
+      <div class="port__text">
+        <h3>좌우명</h3>
+        <ul>
+          <li>내용</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="port">
+      <div class="port__img">
+        <img src="" alt="">
+      </div>
+      <div class="port__text">
+        <h3>목표</h3>
+        <ul>
+          <li>내용</li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+  <!-- work -->
+   <section id="work" class="work font-en">
+    <div class="inner">
+      <h2 class="title">WORK</h2>
+      <div class="port">
+        <div class="port__img">
+          <img src="" alt="">
+        </div>
+        <div class="port__text">
+          <h3>Project01</h3>
+          <ul>
+            <li><span>주요 기능 : </span>최초 자바 수업 프로젝트</li>
+            <li><span>적용 기술 : </span>Java</li>
+            <li><span>GitHub : </span>https://github.com/takeover-da</li>
+            <li><span>URL : </span>https://github.com/takeover-da/Project01</li>
+          </ul>
+          <div class="btn-group">
+            <a href="https://github.com/takeover-da/Project01" target="_blank" class="btn">README</a>
+            <a href="javascript:void(0)" class="btn btn--brown btn-modal">모달</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="port">
+        <div class="port__img">
+          <img src="" alt="">
+        </div>
+        <div class="port__text">
+          <h3>Project 02</h3>
+          <ul>
+            <li><span>주요 기능 : </span>FrontEnd 프로젝트</li>
+            <li><span>적용 기술 : </span>HTML, CSS</li>
+            <li><span>GitHub : </span>https://github.com/takeover-da</li>
+            <li><span>URL : </span>https://github.com/takeover-da/frontend-study</li>
+          </ul>
+          <div class="btn-group">
+            <a href="https://github.com/takeover-da/frontend-study" target="_blank" class="btn">README</a>
+            <a href="javascript:void(0)" class="btn btn--brown btn-modal">모달</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- Skill -->
+   <section id="skill">
+    <div class="inner">
+      <h2 class="title font-en">SKILL</h2>
+      <ul class="skill__list">
+        <li>
+          <div class="font-en">
+            <p>Java</p>
+          </div>
+          <h3 class="font-en">Java</h3>
+          <ul>
+            <li>객체지향 프로그래밍</li>
+            <li>람다식</li>
+            <li>컬렉션 프레임워크</li>
+            <li>예외처리</li>
+            <li>멀티스레딩</li>
+            <li>JVM과 메모리관리</li>
+            <li>디자인 패턴</li>
+            <li>테스트 및 디버깅</li>
+          </ul>
+        </li>
+      <li>
+        <div class="font-en">
+          <p>Html</p>
+        </div>
+        <h3 class="font-en">HTML5</h3>
+        <ul>
+          <li>웹페이지 구조 설계</li>
+          <li>시맨틱 태그 사용</li>
+          <li>폼과 입력 처리</li>
+          <li>웹 접근성</li>
+          <li>SEO 최적화</li>
+          <li>데이터 리스트와 테이블</li>
+        </ul>
+      </li>
+      <li>
+        <div class="font-en">
+          <p>Css</p>
+        </div>
+        <h3 class="font-en">CSS3</h3>
+        <ul>
+          <li>스타일 시트 구성</li>
+          <li>반응형 디자인</li>
+          <li>CSS Grid 레이아웃</li>
+          <li>Flexbox 레이아웃</li>
+          <li>CSS 애니메이션 및 전환</li>
+          <li>상황별 스타일링</li>
+          <li>브라우저 호환성 및 최적화</li>
+          <li>CSS 변수를 활용한 스타일링</li>
+        </ul>
+      </li>
+      <li>
+        <div class="font-en">
+          <p>Js</p>
+        </div>
+        <h3 class="font-en">JavaScript</h3>
+        <ul>
+          <li>기본문법과 데이터구조</li>
+          <li>DOM 조작, 제어</li>
+          <li>이벤트 처리</li>
+          <li>비동기 프로그래밍</li>
+          <li>ES6+ 기능 활용</li>
+          <li>AJAX 및 Fetch API</li>
+          <li>JavaScript 프레임워크 및 라이브러리</li>
+          <li>테스트 및 디버깅</li>
+        </ul>
+      </li>
+      <li>
+        <div class="font-en">
+          <p>React</p>
+        </div>
+        <h3 class="font-en">React JS</h3>
+        <ul>
+          <li>컴포넌트 기반 아키텍처</li>
+          <li>상태 관리</li>
+          <li>프롭스 및 자식 컴포넌트</li>
+          <li>React Hooks</li>
+          <li>라우팅</li>
+          <li>컴포넌트 라이프사이클</li>
+          <li>스타일링</li>
+          <li>API 통신</li>
+        </ul>
+      </li>
+      </ul>
+    </div>
+   </section>
+
+  <!-- Content -->
+  <section id="content" class="content font-en">
+    <div class="inner">
+      <h2 class="title">CONTACT</h2>
+      <div class="contact__info">
+        <ul>
+          <li><a href="https://github.com/takeover-da">github.com/takeover-da</a></li>
+          <li>010-5504-1807</li>
+          <li>dlslyn@naver.com</li>
+        </ul>
+      </div>
+      <div class="contact__sns">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/take.__.over" target="_blank">
+              <img src="images/icon/icon_insta.png" alt="인스타그램">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/icon/icon_youtube.png" alt="유튜브">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+   <footer>
+    <div class="inner">
+      <p class="copyright">
+        &copy; <span class="this-year"></span>
+        김인수. <span class="font-en">All Rights Reserved.</span>
+      </p>
+    </div>
+   </footer>
+
+</body>
+</html>
