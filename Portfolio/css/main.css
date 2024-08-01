@@ -144,6 +144,7 @@ header nav ul li a:hover {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
+  background-color: #ecf7ff;
   color: #032635;
   text-align: center;
   border-radius: 5px;
