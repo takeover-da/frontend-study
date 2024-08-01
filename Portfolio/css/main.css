@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #fff8e8;
+  /* background-color: #346430; */
   overflow-x: hidden;
 }
 
@@ -78,13 +79,18 @@ img {
 
 /* HEADER */
 header {
-  background-color: #fff;
+  background-color: #21353d;
   border-bottom: 1px solid #c8c8c8;
   /* 고정된 헤더 만들기 */
   width: 100%;
   position: fixed;
   bottom: 0;
   z-index: 9;
+  /* 왼쪽위치 */
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 header > .inner {
   height: 60px;
@@ -94,25 +100,36 @@ header > .inner {
 }
 /* 윈도우 아이콘 */
 header .logo img {
-  width: 73px;
-  /* 가로 너비만 지정하면 세로 높이는 비율에 맞춰 정해짐 */
+  width: 60px;
+  height: 60px;
+  /* 왼쪽위치 */
+  position: fixed;
+  bottom: 16px;
+  left: 15px;
 }
 header nav ul {
   display: flex;
+  /* 왼쪽위치 */
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  left: 80px;
 }
 /* 폴더 아이콘 */
 header nav ul li img {
-  width: 63px;
-  height: 63px;
-  margin: 10px;
+  width: 55px;
+  height: 55px;
+  margin: -15px;
 }
 header nav ul li {
   padding: 10px 20px;
   font-weight: 700;
+  /* 왼쪽위치 */
+  margin-right: 20px;
 }
+
 header nav ul li a:hover {
   color: orange;
-  /* text-shadow: 1px 1px 5px #333; */
 }
 
 /* ABOUT */
