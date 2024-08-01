@@ -12,8 +12,8 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #333;
-  background-color: #fff8e8;
-  /* background-color: #346430; */
+  /* background-color: #fff8e8; */
+  background-color: #DCE9F0;
   overflow-x: hidden;
 }
 
@@ -56,7 +56,7 @@ img {
   width: 120px;
   padding: 10px;
   display: block; /* a, span 같은 인라인 요소를 버튼으로 사용할 수도 있으니 블록으로 지정 */
-  border: 2px solid #333;
+  border: 2px solid #AEC6C6;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
@@ -79,7 +79,8 @@ img {
 
 /* HEADER */
 header {
-  background-color: #21353d;
+  /* background-color: #21353d; */
+  background-color: #223841;
   border-bottom: 1px solid #c8c8c8;
   /* 고정된 헤더 만들기 */
   width: 100%;
@@ -130,6 +131,37 @@ header nav ul li {
 
 header nav ul li a:hover {
   color: orange;
+}
+
+/* 툴팁 스타일 */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* 툴팁 텍스트 스타일 */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #E4EBEE;
+  color: #032635;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* 호버시 */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* ABOUT */
