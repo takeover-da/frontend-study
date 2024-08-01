@@ -178,7 +178,7 @@ header nav ul li a:hover {
 }
 .about .about__wrapper .about__img img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 .about .about__wrapper .about__text {
   width: 45%;
